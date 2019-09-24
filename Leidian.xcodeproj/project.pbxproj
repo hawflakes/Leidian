@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		045685BD2339FDDD00440C4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045685BC2339FDDD00440C4F /* AppDelegate.swift */; };
+		045685BF2339FDDD00440C4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045685BE2339FDDD00440C4F /* ContentView.swift */; };
+		045685C12339FDE400440C4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045685C02339FDE400440C4F /* Assets.xcassets */; };
+		045685C42339FDE400440C4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045685C32339FDE400440C4F /* Preview Assets.xcassets */; };
+		045685C72339FDE400440C4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045685C52339FDE400440C4F /* Main.storyboard */; };
+		045685D32339FDE500440C4F /* LeidianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045685D22339FDE500440C4F /* LeidianTests.swift */; };
+		045685DE2339FDE500440C4F /* LeidianUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045685DD2339FDE500440C4F /* LeidianUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		045685CF2339FDE500440C4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 045685B12339FDDC00440C4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 045685B82339FDDC00440C4F;
+			remoteInfo = Leidian;
+		};
+		045685DA2339FDE500440C4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 045685B12339FDDC00440C4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 045685B82339FDDC00440C4F;
+			remoteInfo = Leidian;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		045685B92339FDDD00440C4F /* Leidian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leidian.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		045685BC2339FDDD00440C4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		045685BE2339FDDD00440C4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		045685C02339FDE400440C4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		045685C32339FDE400440C4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		045685C62339FDE400440C4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		045685C82339FDE400440C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045685C92339FDE400440C4F /* Leidian.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Leidian.entitlements; sourceTree = "<group>"; };
+		045685CE2339FDE500440C4F /* LeidianTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeidianTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		045685D22339FDE500440C4F /* LeidianTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeidianTests.swift; sourceTree = "<group>"; };
+		045685D42339FDE500440C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045685D92339FDE500440C4F /* LeidianUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeidianUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		045685DD2339FDE500440C4F /* LeidianUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeidianUITests.swift; sourceTree = "<group>"; };
+		045685DF2339FDE500440C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		045685B62339FDDC00440C4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045685CB2339FDE500440C4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045685D62339FDE500440C4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		045685B02339FDDC00440C4F = {
+			isa = PBXGroup;
+			children = (
+				045685BB2339FDDD00440C4F /* Leidian */,
+				045685D12339FDE500440C4F /* LeidianTests */,
+				045685DC2339FDE500440C4F /* LeidianUITests */,
+				045685BA2339FDDD00440C4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		045685BA2339FDDD00440C4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				045685B92339FDDD00440C4F /* Leidian.app */,
+				045685CE2339FDE500440C4F /* LeidianTests.xctest */,
+				045685D92339FDE500440C4F /* LeidianUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		045685BB2339FDDD00440C4F /* Leidian */ = {
+			isa = PBXGroup;
+			children = (
+				045685BC2339FDDD00440C4F /* AppDelegate.swift */,
+				045685BE2339FDDD00440C4F /* ContentView.swift */,
+				045685C02339FDE400440C4F /* Assets.xcassets */,
+				045685C52339FDE400440C4F /* Main.storyboard */,
+				045685C82339FDE400440C4F /* Info.plist */,
+				045685C92339FDE400440C4F /* Leidian.entitlements */,
+				045685C22339FDE400440C4F /* Preview Content */,
+			);
+			path = Leidian;
+			sourceTree = "<group>";
+		};
+		045685C22339FDE400440C4F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				045685C32339FDE400440C4F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		045685D12339FDE500440C4F /* LeidianTests */ = {
+			isa = PBXGroup;
+			children = (
+				045685D22339FDE500440C4F /* LeidianTests.swift */,
+				045685D42339FDE500440C4F /* Info.plist */,
+			);
+			path = LeidianTests;
+			sourceTree = "<group>";
+		};
+		045685DC2339FDE500440C4F /* LeidianUITests */ = {
+			isa = PBXGroup;
+			children = (
+				045685DD2339FDE500440C4F /* LeidianUITests.swift */,
+				045685DF2339FDE500440C4F /* Info.plist */,
+			);
+			path = LeidianUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		045685B82339FDDC00440C4F /* Leidian */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045685E22339FDE500440C4F /* Build configuration list for PBXNativeTarget "Leidian" */;
+			buildPhases = (
+				045685B52339FDDC00440C4F /* Sources */,
+				045685B62339FDDC00440C4F /* Frameworks */,
+				045685B72339FDDC00440C4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Leidian;
+			productName = Leidian;
+			productReference = 045685B92339FDDD00440C4F /* Leidian.app */;
+			productType = "com.apple.product-type.application";
+		};
+		045685CD2339FDE500440C4F /* LeidianTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045685E52339FDE500440C4F /* Build configuration list for PBXNativeTarget "LeidianTests" */;
+			buildPhases = (
+				045685CA2339FDE500440C4F /* Sources */,
+				045685CB2339FDE500440C4F /* Frameworks */,
+				045685CC2339FDE500440C4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				045685D02339FDE500440C4F /* PBXTargetDependency */,
+			);
+			name = LeidianTests;
+			productName = LeidianTests;
+			productReference = 045685CE2339FDE500440C4F /* LeidianTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		045685D82339FDE500440C4F /* LeidianUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045685E82339FDE500440C4F /* Build configuration list for PBXNativeTarget "LeidianUITests" */;
+			buildPhases = (
+				045685D52339FDE500440C4F /* Sources */,
+				045685D62339FDE500440C4F /* Frameworks */,
+				045685D72339FDE500440C4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				045685DB2339FDE500440C4F /* PBXTargetDependency */,
+			);
+			name = LeidianUITests;
+			productName = LeidianUITests;
+			productReference = 045685D92339FDE500440C4F /* LeidianUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		045685B12339FDDC00440C4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Jack Tihon";
+				TargetAttributes = {
+					045685B82339FDDC00440C4F = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					045685CD2339FDE500440C4F = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 045685B82339FDDC00440C4F;
+					};
+					045685D82339FDE500440C4F = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 045685B82339FDDC00440C4F;
+					};
+				};
+			};
+			buildConfigurationList = 045685B42339FDDC00440C4F /* Build configuration list for PBXProject "Leidian" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 045685B02339FDDC00440C4F;
+			productRefGroup = 045685BA2339FDDD00440C4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				045685B82339FDDC00440C4F /* Leidian */,
+				045685CD2339FDE500440C4F /* LeidianTests */,
+				045685D82339FDE500440C4F /* LeidianUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		045685B72339FDDC00440C4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045685C72339FDE400440C4F /* Main.storyboard in Resources */,
+				045685C42339FDE400440C4F /* Preview Assets.xcassets in Resources */,
+				045685C12339FDE400440C4F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045685CC2339FDE500440C4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045685D72339FDE500440C4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		045685B52339FDDC00440C4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045685BF2339FDDD00440C4F /* ContentView.swift in Sources */,
+				045685BD2339FDDD00440C4F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045685CA2339FDE500440C4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045685D32339FDE500440C4F /* LeidianTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045685D52339FDE500440C4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045685DE2339FDE500440C4F /* LeidianUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		045685D02339FDE500440C4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 045685B82339FDDC00440C4F /* Leidian */;
+			targetProxy = 045685CF2339FDE500440C4F /* PBXContainerItemProxy */;
+		};
+		045685DB2339FDE500440C4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 045685B82339FDDC00440C4F /* Leidian */;
+			targetProxy = 045685DA2339FDE500440C4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		045685C52339FDE400440C4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				045685C62339FDE400440C4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		045685E02339FDE500440C4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		045685E12339FDE500440C4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		045685E32339FDE500440C4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Leidian/Leidian.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Leidian/Preview Content\"";
+				DEVELOPMENT_TEAM = XJHQH86WKJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Leidian/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = net.saltedfish.Leidian;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		045685E42339FDE500440C4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Leidian/Leidian.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Leidian/Preview Content\"";
+				DEVELOPMENT_TEAM = XJHQH86WKJ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Leidian/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = net.saltedfish.Leidian;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		045685E62339FDE500440C4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XJHQH86WKJ;
+				INFOPLIST_FILE = LeidianTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = net.saltedfish.LeidianTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Leidian.app/Contents/MacOS/Leidian";
+			};
+			name = Debug;
+		};
+		045685E72339FDE500440C4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XJHQH86WKJ;
+				INFOPLIST_FILE = LeidianTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = net.saltedfish.LeidianTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Leidian.app/Contents/MacOS/Leidian";
+			};
+			name = Release;
+		};
+		045685E92339FDE500440C4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XJHQH86WKJ;
+				INFOPLIST_FILE = LeidianUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.saltedfish.LeidianUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Leidian;
+			};
+			name = Debug;
+		};
+		045685EA2339FDE500440C4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XJHQH86WKJ;
+				INFOPLIST_FILE = LeidianUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.saltedfish.LeidianUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Leidian;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		045685B42339FDDC00440C4F /* Build configuration list for PBXProject "Leidian" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045685E02339FDE500440C4F /* Debug */,
+				045685E12339FDE500440C4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045685E22339FDE500440C4F /* Build configuration list for PBXNativeTarget "Leidian" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045685E32339FDE500440C4F /* Debug */,
+				045685E42339FDE500440C4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045685E52339FDE500440C4F /* Build configuration list for PBXNativeTarget "LeidianTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045685E62339FDE500440C4F /* Debug */,
+				045685E72339FDE500440C4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045685E82339FDE500440C4F /* Build configuration list for PBXNativeTarget "LeidianUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045685E92339FDE500440C4F /* Debug */,
+				045685EA2339FDE500440C4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 045685B12339FDDC00440C4F /* Project object */;
+}
