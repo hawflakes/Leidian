@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		045685BD2339FDDD00440C4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045685BC2339FDDD00440C4F /* AppDelegate.swift */; };
-		045685BF2339FDDD00440C4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045685BE2339FDDD00440C4F /* ContentView.swift */; };
 		045685C12339FDE400440C4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045685C02339FDE400440C4F /* Assets.xcassets */; };
 		045685C42339FDE400440C4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 045685C32339FDE400440C4F /* Preview Assets.xcassets */; };
 		045685C72339FDE400440C4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045685C52339FDE400440C4F /* Main.storyboard */; };
 		045685D32339FDE500440C4F /* LeidianTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045685D22339FDE500440C4F /* LeidianTests.swift */; };
 		045685DE2339FDE500440C4F /* LeidianUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045685DD2339FDE500440C4F /* LeidianUITests.swift */; };
+		0486E9D323447A1E00EFDF3F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0486E9D223447A1E00EFDF3F /* IOKit.framework */; };
+		0486E9D523447A4C00EFDF3F /* PowerMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486E9D423447A4C00EFDF3F /* PowerMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		045685B92339FDDD00440C4F /* Leidian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leidian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045685BC2339FDDD00440C4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		045685BE2339FDDD00440C4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		045685C02339FDE400440C4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		045685C32339FDE400440C4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		045685C62339FDE400440C4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -48,6 +48,9 @@
 		045685D92339FDE500440C4F /* LeidianUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeidianUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		045685DD2339FDE500440C4F /* LeidianUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeidianUITests.swift; sourceTree = "<group>"; };
 		045685DF2339FDE500440C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0486E9D223447A1E00EFDF3F /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		0486E9D423447A4C00EFDF3F /* PowerMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerMonitor.swift; sourceTree = "<group>"; };
+		0486E9D623447B2200EFDF3F /* Leidian-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Leidian-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0486E9D323447A1E00EFDF3F /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +86,7 @@
 				045685D12339FDE500440C4F /* LeidianTests */,
 				045685DC2339FDE500440C4F /* LeidianUITests */,
 				045685BA2339FDDD00440C4F /* Products */,
+				0486E9D123447A1E00EFDF3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,8 +103,7 @@
 		045685BB2339FDDD00440C4F /* Leidian */ = {
 			isa = PBXGroup;
 			children = (
-				045685BC2339FDDD00440C4F /* AppDelegate.swift */,
-				045685BE2339FDDD00440C4F /* ContentView.swift */,
+				0486E9D723447B2E00EFDF3F /* Sources */,
 				045685C02339FDE400440C4F /* Assets.xcassets */,
 				045685C52339FDE400440C4F /* Main.storyboard */,
 				045685C82339FDE400440C4F /* Info.plist */,
@@ -133,6 +137,24 @@
 				045685DF2339FDE500440C4F /* Info.plist */,
 			);
 			path = LeidianUITests;
+			sourceTree = "<group>";
+		};
+		0486E9D123447A1E00EFDF3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0486E9D223447A1E00EFDF3F /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0486E9D723447B2E00EFDF3F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0486E9D623447B2200EFDF3F /* Leidian-Bridging-Header.h */,
+				045685BC2339FDDD00440C4F /* AppDelegate.swift */,
+				0486E9D423447A4C00EFDF3F /* PowerMonitor.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				045685BF2339FDDD00440C4F /* ContentView.swift in Sources */,
+				0486E9D523447A4C00EFDF3F /* PowerMonitor.swift in Sources */,
 				045685BD2339FDDD00440C4F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +392,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Leidian/Sources/Leidian-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -423,6 +446,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "Leidian/Sources/Leidian-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
