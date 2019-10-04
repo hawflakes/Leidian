@@ -17,10 +17,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     private var count = 0
     private var monitor = PowerMonitor()
 
-    let statusItem:NSStatusItem =  {
-        let item = NSStatusBar.system.statusItem(withLength:NSStatusItem.squareLength)
+    var statusItem:NSStatusItem =  {
+        let item = NSStatusBar.system.statusItem(withLength:NSStatusItem.variableLength)
+        item.behavior = [.removalAllowed, .terminationOnRemoval]
         if let button = item.button {
-            button.font = NSFont.systemFont(ofSize: NSStatusItem.squareLength, weight: .medium)
+            button.font = NSFont.menuFont(ofSize: 10.0)
             button.image = NSImage(imageLiteralResourceName: "Battery Icon Frame")
         } else {
             fatalError("Houston, we have a problem.")
@@ -33,11 +34,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        if let button = statusItem.button {
-          button.action = #selector(menuTapped(_:))
-        }
+        monitor.delegate = self
         monitor.update()
         monitor.startMonitoring()
+        // menus prevent the status action from triggering
         constructMenu()
     }
 
@@ -45,14 +45,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Insert code here to tear down your application
     }
 
-    @objc func menuTapped(_ sender:Any?) {
-        print("menu tapped")
-        monitor.update()
-    }
-
     // build up the menu
     func constructMenu() {
         let menu = NSMenu()
+        menu.delegate = self
         
         menu.addItem(NSMenuItem(title: "Icrement", action: #selector(AppDelegate.incrementMenuItem(_:)), keyEquivalent: "I"))
         menu.addItem(NSMenuItem.separator())
@@ -80,3 +76,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 }
 
+extension AppDelegate: NSMenuDelegate {
+    func menuWillOpen(_ menu: NSMenu) {
+        monitor.update()
+    }
+}
+
+extension AppDelegate: PowerMonitorDelegate {
+    func powerAdapterUpdated(_ info: ExternalPowerAdapterInfo?) {
+        guard let info = info else {
+            return
+        }
+        
+        if let watts = info.watts {
+            statusItem.button?.title = "\(watts)W"
+        }
+    }
+}
