@@ -44,36 +44,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-
-    // build up the menu
-    func constructMenu() {
-        let menu = NSMenu()
-        menu.delegate = self
-        
-        menu.addItem(NSMenuItem(title: "Icrement", action: #selector(AppDelegate.incrementMenuItem(_:)), keyEquivalent: "I"))
-        menu.addItem(NSMenuItem.separator())
-        menu.addItem(NSMenuItem(title: "Quit Quotes", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
-        
-        statusItem.menu = menu
-    }
-    
-    @objc func incrementMenuItem(_ sender:Any?) {
-        // update the button
-        guard let button = menuButton else {
-            print("Missing menuButton. Is something messed up?")
-            return
-        }
-        
-
-        count += 1
-        
-        button.title = "\(count)"
-        
-//        let baseImage = NSImage(imageLiteralResourceName: "Battery Icon Frame")
-//
-//
-//        button.image = newImage
-    }
 }
 
 extension AppDelegate: NSMenuDelegate {
@@ -92,4 +62,36 @@ extension AppDelegate: PowerMonitorDelegate {
             statusItem.button?.title = "\(watts)W"
         }
     }
+    
+        // build up the menu
+        func constructMenu() {
+            let menu = NSMenu()
+            menu.delegate = self
+            
+            // TODO: show current power source
+            // TODO: show power stats
+            menu.addItem(NSMenuItem(title: "Icrement", action: #selector(AppDelegate.incrementMenuItem(_:)), keyEquivalent: "I"))
+            menu.addItem(NSMenuItem.separator())
+            menu.addItem(NSMenuItem(title: "Quit Quotes", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
+            
+            statusItem.menu = menu
+        }
+        
+        @objc func incrementMenuItem(_ sender:Any?) {
+            // update the button
+            guard let button = menuButton else {
+                print("Missing menuButton. Is something messed up?")
+                return
+            }
+            
+
+            count += 1
+            
+            button.title = "\(count)"
+            
+    //        let baseImage = NSImage(imageLiteralResourceName: "Battery Icon Frame")
+    //
+    //
+    //        button.image = newImage
+        }
 }
