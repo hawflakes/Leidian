@@ -32,6 +32,7 @@ class PowerMonitor {
         // TODO: put this into a different thread/runLoop
         // start listening in a runloop
         let context = UnsafeMutableRawPointer(Unmanaged.passUnretained(self).toOpaque())
+        
         let source:Unmanaged<CFRunLoopSource> = IOPSNotificationCreateRunLoopSource({ (context) in
             let powerSourcesInfo = IOPSCopyPowerSourcesInfo().takeRetainedValue()
             let powerSources = IOPSCopyPowerSourcesList(powerSourcesInfo).takeRetainedValue() as [CFTypeRef]
@@ -44,6 +45,24 @@ class PowerMonitor {
                     print("Couldn't get description for source")
                 }
             }
+           
+            // TODO: update with the right source
+            guard let context = context else {
+                return
+            }
+            
+            let contextSelf = Unmanaged<PowerMonitor>.fromOpaque(context).takeUnretainedValue()
+            
+            if let delegate = contextSelf.delegate {
+                if let externalDetails = IOPSCopyExternalPowerAdapterDetails(),
+                    let externalDetailsDict = externalDetails.takeUnretainedValue() as? [String:Any] {
+                    let info = ExternalPowerAdapterInfo(externalDetailsDict)
+                    delegate.powerAdapterUpdated(info)
+                } else {
+                    delegate.powerAdapterUpdated(nil)
+                }
+            }
+            
         }, context)
         self.runloopSource = source
         
@@ -52,8 +71,10 @@ class PowerMonitor {
                            source.takeUnretainedValue(),
                            CFRunLoopMode.defaultMode)
         
-        // TODO: also listen for the power source change events...
-        // IOPSCreateLimitedPowerNotification(<#T##callback: IOPowerSourceCallbackType!##IOPowerSourceCallbackType!##(UnsafeMutableRawPointer?) -> Void#>, <#T##context: UnsafeMutableRawPointer!##UnsafeMutableRawPointer!#>)
+// NOTE: IOPSCreateLimitedPowerNotification() is superceded by the above IOPSNotificationCreateRunLoopSource()
+// IOPSCreateLimitedPowerNotification(<#T##callback: IOPowerSourceCallbackType!##IOPowerSourceCallbackType!##(UnsafeMutableRawPointer?) -> Void#>, <#T##context: UnsafeMutableRawPointer!##UnsafeMutableRawPointer!#>)
+
+        
     }
     
     func stopMonitoring() {
@@ -160,4 +181,9 @@ extension ExternalPowerAdapterInfo: CustomDebugStringConvertible {
         source: \(source != nil ? "\(source)": "nil")
         """
     }
+}
+
+
+struct BatteryPowerInfo {
+    
 }
